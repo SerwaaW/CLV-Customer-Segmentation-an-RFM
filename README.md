@@ -11,6 +11,7 @@ Goal: Identify customer segments based on Recency, Frequency, and Monetary (RFM)
 Goal: Calculate and predict CLV for customers using cohort analysis and provide insights for business growth.
 
 Task 1: Customer Segmentation & RFM Analysis
+
 **Objectives**
 - Use transactional data from 2010-12-01 to 2011-12-01 for customer segmentation.
 - Calculate RFM values and scores using SQL with quartiles for segmentation.
@@ -22,12 +23,12 @@ Data Selection & Filtering:
 Extract data for the specified timeframe using SQL.
 Use APPROX_QUANTILES in BigQuery to calculate RFM quartiles.
 
-RFM Calculation:
+**RFM Calculation:**
 Recency: Days since the customer's last transaction (calculated from 2011-12-01).
 Frequency: Total number of transactions.
 Monetary Value: Total spend.
 
-Scoring:
+**Scoring:**
 Assign scores from 1 to 4 (using quartiles) for each RFM metric.
 Calculate a combined RFM score.
 Customer Segmentation:
@@ -38,13 +39,13 @@ Visualization and Insights:
 Develop an interactive dashboard showcasing customer segmentation.
 Highlight key segments for the marketing team's focus.
 
-Task 2: CLV Analysis
+**Task 2: CLV Analysis**
 Objectives
 Incorporate all user registrations (not just purchasers) into the analysis.
 Perform weekly cohort analysis to predict revenue trends.
 Calculate average cumulative revenue per user over a 12-week period.
 
-Process
+**Process**
 Data Preparation:
 
 Use user_pseudo_id to distinguish users and identify their first visit date as their "registration date."
@@ -72,7 +73,7 @@ Data Visualization: Tableau for creating interactive dashboards.
 Deliverables
 RFM Analysis Output:
 Tables for RFM values, RFM quartiles, and RFM scores.
-Segmentation dashboard with insights for marketing strategies. Link to RFM Tableau Dashboard: https://public.tableau.com/views/RFMandCustomerSegmentation/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+Segmentation dashboard with insights for marketing strategies - Link to RFM Tableau Dashboard: https://public.tableau.com/views/RFMandCustomerSegmentation/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 CLV Analysis Output:
 Weekly cohort analysis and cumulative revenue charts.
